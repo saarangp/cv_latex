@@ -15,12 +15,15 @@
 
 % Bibliography: compact author-year style
 \usepackage[
-  backend=biber,
-  style=nature,          % IEEE numeric style
-  sorting=ydnt,        % year desc (optional)
-  giveninits=true,     % initials
-  maxnames=5, minnames=5,   % -> "et al." if >3
-  doi=false, isbn=false, url=false, eprint=false,
+	backend=biber,
+	style=authoryear,
+	sorting=ydnt,
+	giveninits=true,
+	maxnames=6, minnames=6,
+	maxbibnames=6, minbibnames=6,
+	doi=false, isbn=false, url=false,
+	date=year,
+	dashed=false
 ]{biblatex}
 \addbibresource{papers.bib}
 
