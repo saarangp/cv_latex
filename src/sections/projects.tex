@@ -15,15 +15,20 @@
 
 \section*{Selected Research Projects}
 
-\begin{projectlong}{EEG Foundation Model}{2024--Present}
-    \item Developing an EEG foundation model based on LeJEPA that can learn reusable and transferable representations. 
-    \item Executed distributed pre-training on 30k hours ($>$ 1B tokens) and over 20K subjects and evaluated on both BCI and clinical tasks to assess cross-task and cross-cohort transfer.
-    \item Contributed to an cross-dataset evaluation suite covering transfer, robustness to noise, and low-label adaptation across research and clinical tasks.
+\begin{projectlong}{Laya: EEG Foundation Model}{2024--2026}
+    \item Developed Laya, the first JEPA-based EEG foundation model, showing that latent prediction yields more transferable, noise-robust representations than reconstruction-based pretraining.
+    \item Pretrained on 30K hours ($>$ 1B tokens) across 20K+ subjects and 17 montages; evaluated on 14 BCI and clinical tasks via frozen linear probing.
+    \item Controlled ablations isolate the pretraining objective as the primary driver of gains over reconstruction baselines.
 \end{projectlong}
 
+\begin{projectlong}{Thalamocortical Seizure Dynamics}{2023--2026}
+    \item Characterized frequency-specific, directed thalamocortical connectivity across the full seizure trajectory in 19 pediatric epilepsy patients using SEEG.
+    \item Showed that slow-frequency thalamic outflow to cortex exceeds cortico-cortical outflow during seizures, with nucleus-specific recruitment matching known anatomy (AN for limbic, CM for frontal).
+    \item Thalamic spectral and connectivity features alone classify seizure state with AUROC 0.83--0.84.
+\end{projectlong}
 
-\begin{projectlong}{Epilepsy Dynamics and Biomarkers for Closed-Loop Neurostimulation}{2023--Present}
-    \item Established evidence for thalamic involvement in seizure dynamics in pediatric epilepsy using SEEG spectral and connectivity analyses.
-    \item Characterized thalamocortical interaction patterns during seizures to clarify mechanisms of modulation and termination.
-    \item Investigating biomarker-driven deep learning approaches for identifying adaptive closed-loop thalamic stimulation protocols in pediatric epilepsy.
+\begin{projectlong}{Seizure World Model}{2025--2026}
+    \item Built a world model for seizure dynamics that encodes intracranial EEG into a learned latent space and predicts brain-state trajectories conditioned on stimulation parameters.
+    \item Counterfactual rollouts predict stimulation-induced seizure outcomes (AUROC 0.81) where pre-stimulation brain state alone is at chance.
+    \item Preliminary cross-device validation on chronic RNS implants shows the learned ictal manifold and action conditioning transfer to unseen recording hardware.
 \end{projectlong}
